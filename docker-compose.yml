@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  efcore-baseline:
+    image: ${DOCKER_REGISTRY-}efcore5baseline
+    build:
+      context: .
+      dockerfile: EFCore5-Baseline/Dockerfile
